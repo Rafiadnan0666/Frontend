@@ -1,33 +1,41 @@
-/**
+/** 
  * Function to display download result
- * @param {string} result = `Windows-12.iso` 
+ * @param {string} result - 
  */
-
-const showDownload = () =>
-   new Promise((resolve, reject) => {
+const showDownload = (result) => {
+  return new Promise((resolve) => {
     setTimeout(() => {
-        console.log("Just Download Windows-12.iso");
+      console.log(result);
       resolve();
     }, 2000);
   });
-/** 
- * Function to download a file
- * @param {function} callback - Callback function show
- */
-
-const download = () => {
-  console.log("Download...");
-};
-
-const main = async () => {
-    try{
-        await showDownload().then(download());
-    }catch(error){
-        console.error("Error", error);
-    }
 }
 
-main()
+/**
+ * Function to download a file
+ *  @param {function} callback - Callback function t
+ */
+const download = () => {
+  console.log("Downloading file...");
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Windows-12.iso");
+    }, 2000);
+  });
+}
+
+const main = async () => {
+  try {
+    const result = await download();
+    console.log(`Downloaded successfully: ${result}`);
+  } catch (error) {
+    console.error("Error downloading the file", error);
+  }
+}
+
+main();
+
+
 
 /**
  * TODO:
