@@ -1,0 +1,40 @@
+.card {
+  background-color: #f3f3f3f3;
+  width: 200px;
+  height: fit-content;
+  margin: 20px;
+}
+td {
+  text-align: center;
+}
+.caard-head {
+  text-align: center;
+  font-weight: bold;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.member {
+  color: #717171;
+}
+
+button {
+  padding: 0.3rem 0.5rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}

@@ -1,0 +1,47 @@
+/* Small Screen */
+.navbar {
+    background-color: #3f83c6;
+    color:#fff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.navbar ul {
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    padding: 15px;
+}
+
+.navbar ul li {
+    margin-bottom: 10px;
+}
+
+.navbar ul li:last-child {
+    margin-bottom: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s
+}
+
+.navbar ul li a:hover {
+    color: yellow;
+}
+
+/* Medium Screen : 768px */
+@media only screen and (min-width: 768px) {
+    .navbar ul {
+        display: flex;
+    }
+
+    .navbar ul li {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}
