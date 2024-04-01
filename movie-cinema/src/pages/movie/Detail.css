@@ -1,0 +1,34 @@
+.detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cool-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* Example color */
+}
+
+.poster-container {
+    margin-bottom: 20px;
+}
+
+.poster {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.overview-container {
+    padding: 20px;
+    background-color: #f9f9f9; /* Example background color */
+    border-radius: 8px;
+}
+
+.overview {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #666; /* Example color */
+}

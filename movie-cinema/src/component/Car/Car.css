@@ -1,0 +1,22 @@
+
+.card img {
+    height: 200px;
+}
+
+.card button {
+    background-color: rgb(136, 136, 212);
+    justify-content: center;
+    border-radius: 5px;
+    margin-left: 45%;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.card button a {
+    text-decoration: none;
+    color: black;
+}
+
+.card button a:hover {
+    color: #fff;
+}
