@@ -40,7 +40,7 @@ const NavbarComponent = ({ className, expand, ...args }) => {
             Dashboard
           </NavLink>
 
-          <NavLink className="nav-link pe-2" to="/top">
+          <NavLink className="nav-link pe-2" to="/course">
             Courses
           </NavLink>
         </Nav>

@@ -35,9 +35,6 @@ const DetailCourse = () => {
               <div className="title is-4">{course.name}</div>
               <div className="subtitle is-6">{course.desc}</div>
               <p>{course.desc}</p>
-              <p>
-                <strong>Price :</strong> 1.000.000
-              </p>
               <p>Stock</p>
               <button className="button is-primary w-100">Add to cart</button>
             </div>

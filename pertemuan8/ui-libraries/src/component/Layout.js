@@ -2,6 +2,7 @@ import React, { Children } from "react";
 import NavbarComponent from "./Navbar";
 import Sidebar from "./Sidebar";
 
+
 const Layout = ({ children }) => {
   return (
     <div>
