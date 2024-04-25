@@ -15,6 +15,8 @@ import TableCourse from "./component/Course/TableCourse";
 import NotFound from "./pages/NotFound";
 import TableTrainer from "./component/Trainer/TableTrainer";
 import AddTrainer from "./component/Trainer/AddTrainer";
+import EditCourse from "./component/Course/EditCourse";
+import EditTrainer from "./component/Trainer/EditTrainer";
 
 const App = () => {
   return (
@@ -28,8 +30,10 @@ const App = () => {
           <Route path="/course/:id" element={<DetailCoursePages />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="course/add" element={<AddCourse />} />
+          <Route path="table-courses/course/edit/:id" element={<EditCourse />} />
           <Route path="table-courses" element={<TableCourse />} />
           <Route path="trainer/add" element={<AddTrainer />} />
+          <Route path="/trainer/edit/:id" element={<EditTrainer/>} />
           <Route path="table-trainer" element={<TableTrainer />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>

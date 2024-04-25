@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "bulma/css/bulma.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "./../../images/logo.jpg";
+import { useDispatch, useSelector } from "react-redux";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const { user, isError, isSuccess, isLoading, message } = useSelector(
+    (state) => state.auth
+  );
+
+  const auth = (e) => {
+    e.preventDefault();
+    dispatch(LoginUser({ email, password }));
+  };
   return (
     <section className="hero is-fullheight is-fullwidth has-background-grey-light">
       <section className="hero is-medium is-info">
@@ -38,14 +51,17 @@ const Login = () => {
                   <input
                     type="password"
                     name="password"
-                className="input"
+                    className="input"
                     placeholder="*******"
                     required
                     autoComplete="current-password"
                   />
                 </div>
                 <div className="field">
-                  <button type="submit" className="button is-primary is-fullwidth">
+                  <button
+                    type="submit"
+                    className="button is-primary is-fullwidth"
+                  >
                     Login
                   </button>
                 </div>
